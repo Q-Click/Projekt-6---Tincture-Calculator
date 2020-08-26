@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    position: relative;
+    height: 100vh;
+    background-image: url(/img/c3804c8910b0177546000f6128171b23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000007a;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 80%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.calculator div {
+    flex-basis: 50%;
+    padding: 20px;
+    line-height: 150%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+input {
+    width: 25%;
+    font-size: 0.9em;
+    border-radius: 15%;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 30px;
+    opacity: 0;
+}
+
+.percent {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-dark {
+    border: solid 2px #1f1f1f;
+    background: #fff;
+    color: #1f1f1f;
+}
+
+.btn-dark:hover,
+.btn-dark.active {
+    border: solid 2px #1f1f1f;
+    background: #1f1f1f;
+    color: #fff;
+}

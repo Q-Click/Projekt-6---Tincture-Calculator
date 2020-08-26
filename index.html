@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tincture Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Kalkulator nalewek</h1>
+            <div class="calculator">
+                <div>Ilość użytych owoców w gramach: <input type="text" class="fruits" value=""> g</div>
+                <div>Ilość użytego cukru w gramach: <input type="text" class="sugar" value=""> g</div>
+                <div>Ilość użytego alkoholu (40%) w mililitrach: <input type="text" class="vodka" value=""> ml</div>
+                <div>Ilość użytego spirytusu (97%) w mililitrach: <input type="text" class="spirit" value=""> ml
+                </div>
+                <div>Ilość pozostałych odpadków po odsączeniu i odciśnięciu w gramach: <input type="text" class="trash"
+                        value="">
+                    g</div>
+            </div>
+            <button class="btn btn-dark">Oblicz</button>
+            <div class="result">
+                Zawartość procentowa alkoholu w nalewce wynosi ≈ <div class="percent"></div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
